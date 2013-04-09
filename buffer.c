@@ -151,6 +151,8 @@ static int evbuffer_readfile(struct evbuffer *buf, evutil_socket_t fd,
 #define evbuffer_readfile evbuffer_read
 #endif
 
+#define  TAILQ_END(head)      NULL
+
 static struct evbuffer_chain *
 evbuffer_chain_new(size_t size)
 {
